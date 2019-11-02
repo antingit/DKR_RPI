@@ -1,0 +1,6 @@
+write to file /etc/modprobe.d/w1.conf
+this text: options wire timeout=1 slave_ttl=3
+
+write to file rc.local
+sudo sh -c "echo ds2482 0x18 > /sys/bus/i2c/devices/i2c-1/new_device"
+
